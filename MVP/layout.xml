@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layout onLaunch="launch" onVolumeUp="volume_up" onVolumeDown="volume_down" onResume="play_pause" onPause="play_pause">
+  <tabs color="blac">
+    <tab text="Playback" >
+      <row>
+        <label id="info" text="[Not Playing]" textAlign="center" onTap="update" />
+      </row>
+      <row>
+        <button icon="vdown" onTap="volume_down" />
+        <button icon="vmute" onTap="volume_mute" />
+        <button icon="vup" onTap="volume_up" />
+      </row>
+      <row>
+        <button icon="previous" onTap="previous" />
+        <button icon="fullscreen" onTap="fullscreen" />
+        <button icon="next" onTap="next" />
+      </row>
+      <row>
+        <button icon="stop" onTap="stop" />
+        <button text="OSD" onTap="osd" />
+        <button icon="playpause" onTap="play_pause" />
+      </row>
+      <row>
+        <button text="-30S" onTap="backward_30" />
+        <button text="-5S" onTap="backward" />
+        <button text="+5S" onTap="forward" />
+        <button text="+30S" onTap="forward_30" />
+      </row>
+    </tab>
+    <tab text="Options">
+      <row weight="wrap">
+        <label text="Subtitle options" />
+      </row>
+      <row>
+        <button text="Toggle" onTap="toggle_subs" />
+        <button text="Switch" onTap="switch_subs" />
+      </row>
+      <row weight="wrap">
+        <label  text="Subtitle delay" />
+      </row>
+      <row>
+        <button icon="down" onTap="subtitle_delay_down" />
+        <button icon="up" onTap="subtitle_delay_up" />
+      </row>
+      <row weight="wrap">
+        <label  text="Audio delay" />
+      </row>
+      <row>
+        <button icon="down" onTap="audio_delay_down" />
+        <button icon="up" onTap="audio_delay_up" />
+      </row>
+      <row weight="wrap">
+        <label text="Playback speed" />
+      </row>
+      <row>
+        <button icon="rwd" onTap="playback_speed_down" />
+        <button icon="play" onTap="playback_speed_reset" />
+        <button icon="ff" onTap="playback_speed_up" />
+      </row>
+      <row weight="wrap" >
+        <label  text="Anime4K" />
+      </row>
+      <row>
+        <button text="OFF" onTap="anime4k_0" />
+        <button text="A" onTap="anime4k_1" />
+        <button text="B" onTap="anime4k_2" />
+        <button text="C" onTap="anime4k_3" />
+        <button text="A+A" onTap="anime4k_4" />
+        <button text="B+B" onTap="anime4k_5" />
+        <button text="C+A" onTap="anime4k_6" />
+      </row>
+    </tab>
+  </tabs>
+</layout>
