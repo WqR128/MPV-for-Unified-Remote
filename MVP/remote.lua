@@ -57,7 +57,7 @@ end
 --@help Mute volume
 actions.volume_mute = function()
   actions.command();
-  kb.stroke("m");
+  kb.text("m");
 end
 
 --@help Raise volume +
